@@ -1,0 +1,1013 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* * {
+    outline: 1px solid red; /* This will add a red border around all elements to help identify the culprit
+}
+ */
+
+
+/* preloader section start */
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #f2f4f5 url(/assist/img/preloader1.gif) no-repeat;
+    background-position: center;
+    z-index: 9999;
+    position: fixed;
+    background-size: 5%;
+
+}
+
+.bg-pink {
+    background-color: #FF006F;
+
+}
+
+.text-pink {
+    color: #FF006F;
+}
+
+.bg-blue {
+    background-color: #202EF7;
+}
+
+.text-blue {
+    color: #202EF7;
+}
+
+.bg-yellow {
+    background-color: #FFFF21;
+}
+
+.text-yellow {
+    color: #FFAE40;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.5s;
+
+}
+
+#btn1:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #FF006F;
+}
+
+#btn2 {
+    color: white;
+    background-color: transparent;
+    border: white solid 2px;
+    padding: 10px 40px;
+}
+
+#btn2:hover {
+    transform: translateY(-10px);
+    color: white;
+    box-shadow: 0px 9px 30px rgba(94, 93, 93, 0.2);
+}
+
+#btn-3 {
+    background-color: transparent;
+    border: #FF006F 2px solid;
+    color: #FF006F;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+#btn-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgb(225, 213, 213);
+}
+#btn4{
+    background-color: #1E2DF7;
+    color: #dde0e2;
+}
+#btn4:hover {
+    transform: translateY(-10px);
+    background-color: #202EF7;
+    color: white;
+    box-shadow: 0px 10px 30px rgb(50, 50, 50,0.9);
+}
+
+#btn-5 {
+    background-color: transparent;
+    border: 2px solid #202EF7;
+    color: #000000;
+    padding: 10px 30px;
+    transition: all 0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-5:hover {
+    background-color: #202EF7;
+    color: white;
+    box-shadow: 0px 8px 20px rgba(76, 76, 76) 0.5;
+}
+
+/**---- Navbar & Banner section start----**/
+/*-- Navbar section start --*/
+nav .navbar-brand img {
+    width: 140px;
+}
+
+#banner ul li .nav-link {
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+
+.scroll-down {
+    background-color: white;
+    padding: 0;
+}
+
+#banner .scroll-down ul li .nav-link {
+    color: black;
+}
+
+.scroll-down .navbar-brand img {
+    width: 90px;
+}
+
+.navbar-toggler:hover+.offcanvas {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.offcanvas {
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    visibility: hidden;
+    transform: translateX(100%);
+    background-color: #FF006F;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.offcanvas .social-icons a {
+    size: 30px;
+    color: #dde0e2;
+    text-decoration: none;
+}
+
+.offcanvas .social-icons a:hover {
+    color: white;
+}
+
+.offcanvas .social-icons {
+    padding-top: 25px;
+}
+
+/*-- Navbar section end --*/
+/*-- Banner section start --*/
+#banner {
+    background: url(../img/about.jpg) no-repeat;
+    height: 87vh;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+#banner .h2 {
+    font-size: 70px;
+    line-height: 70px;
+    top: 300px;
+    font-weight: 700;
+    position: relative;
+    left: 50px;
+}
+
+/*--Banner section end --*/
+/*--Production section start --*/
+#production {
+    background: url(../img/core.png) #202EF7 no-repeat;
+    height: ;
+    background-size: 90%;
+    background-position: bottom;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#production .row {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#production .conatiner {
+    padding: 100px 100px 0px 100px;
+}
+
+#production h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#production p {
+    font-size: 27px;
+}
+
+#production img {
+    top: -250px;
+    position: relative;
+    height: inherit;
+    width: 100%;
+}
+
+/*--Production section end --*/
+/*-- Service section start --*/
+#service {
+    color: white;
+    align-self: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#service a .box {
+    color: white;
+    display: flex;
+}
+
+#service a {
+    text-decoration: none;
+}
+
+#service .box .h4 {
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    /* Center content vertically */
+
+}
+
+#service .box .img {
+    width: auto;
+    height: 35px;
+}
+
+#service .box {
+    padding: 12px 25px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+#service .box:hover {
+    transform: scale(1.05);
+    /* Slightly reduce the scale for smoother effect */
+}
+
+#service .box-1 {
+    background: url(../img/services-2danimation-bg-2.png);
+    background-position: center right;
+}
+
+#service .box-2 {
+    background: url(../img/services-motiongraphic-bg.png);
+    background-position: center right;
+}
+
+#service .box-3 {
+    background: url(../img/services-visualeffects-bg.png);
+    background-position: center right;
+}
+
+#service .box-4 {
+    background: url(../img/services-augmentedreality-bg.png);
+    background-position: center right;
+}
+
+/*-- Service section end --*/
+/*-- Animation section start --*/
+#animation {
+    padding-bottom: 30px;
+}
+
+#animation h2 {
+    font-size: 75px;
+    font-weight: 800;
+    margin-top: 60px;
+}
+
+#animation h2 sup {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(203, 194, 194);
+}
+
+#animation .row1 {
+    margin-top: -35px;
+}
+
+#animation .row .col .box {
+    border-radius: 25px;
+    padding: 60px;
+}
+
+#animation .container {
+    padding: 70px 50px;
+}
+
+#animation h4 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+#animation .btn {
+    margin-top: 30px;
+}
+
+#animation p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#animation .background1 {
+    background: url(../img/corporate-animation-singapore\ \(1\).gif) no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+
+}
+
+#animation .twoD {
+    background: url(../img/services-2danimation-bg-2.png) no-repeat;
+    background-position: bottom right;
+    object-fit: cover;
+    background-size: cover;
+
+}
+
+#animation .threeD {
+    background: url(../img/services-3danimation-bg.png) no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    /* Added */
+    object-fit: cover;
+}
+
+#animation .background2 {
+    background: url(../img/animated-videos-for-business-singapore.gif) no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+    border-radius: 25px;
+}
+
+#animation .row {
+    margin-bottom: 23px;
+}
+
+/*-- Animation section end --*/
+/*-- Motion graphic section start --*/
+#motion-graphic {
+    padding-bottom: 30px;
+}
+
+#motion-graphic h2 {
+    font-size: 75px;
+    font-weight: 800;
+    margin-top: 60px;
+    text-align: end;
+    margin-right: 60px;
+}
+
+#motion-graphic h2 sup {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(203, 194, 194);
+}
+
+#motion-graphic .row1 {
+    margin-top: -35px;
+}
+
+#motion-graphic .row .col .box {
+    border-radius: 25px;
+    padding: 60px;
+}
+
+#motion-graphic .container {
+    padding: 70px 50px;
+}
+
+#motion-graphic h4 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+#motion-graphic .btn {
+    margin-top: 30px;
+}
+
+#motion-graphic p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#motion-graphic p a {
+    text-decoration: none;
+    color: #FF006F;
+}
+
+#motion-graphic .background1 {
+    background: url(../img/Baby-Bonus-animated-corporate-video.gif) no-repeat;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+
+}
+
+#motion-graphic .motion1 {
+    background: url(../img/services-motiongraphic-bg.png) no-repeat;
+    background-position: bottom right;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#motion-graphic .motion2 {
+    background: url(../img/services-broadcastpackage-bg\ \(1\).png) no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    /* Added */
+    object-fit: cover;
+}
+
+#motion-graphic .background2 {
+    background: url(../img/singapore-corporate-animation.gif) no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+    border-radius: 25px;
+}
+
+#motion-graphic .row {
+    margin-bottom: 23px;
+}
+
+/*-- Motion graphic section end --*/
+/*-- Visual effects section start --*/
+#visual-effects {
+    padding-bottom: 30px;
+}
+
+#visual-effects h2 {
+    font-size: 75px;
+    font-weight: 800;
+    margin-top: 60px;
+}
+
+#visual-effects h2 sup {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(203, 194, 194);
+}
+
+#visual-effects .row1 {
+    margin-top: -35px;
+}
+
+#visual-effects .row .col .box {
+    border-radius: 25px;
+    padding: 60px;
+}
+
+#visual-effects .container {
+    padding: 70px 50px;
+}
+
+#visual-effects h4 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+#visual-effects .btn {
+    margin-top: 30px;
+}
+
+#visual-effects p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#visual-effects p a {
+    text-decoration: none;
+    color: #FF006F;
+}
+
+#visual-effects .background1 {
+    background: url(../img/Snek-singapore-corporate-animation.gif) no-repeat;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+
+}
+
+#visual-effects .visual {
+    background: url(../img/services-visualeffects-bg.png) no-repeat;
+    background-position: bottom right;
+    object-fit: cover;
+    background-size: cover;
+}
+
+/*-- Visual effects section end --*/
+/*-- Interactive section start --*/
+#interactive {
+    padding-bottom: 30px;
+}
+
+#interactive h2 {
+    font-size: 75px;
+    font-weight: 800;
+    margin-top: 60px;
+    text-align: center;
+}
+
+#interactive h2 sup {
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(203, 194, 194);
+}
+
+#interactive .row1 {
+    margin-top: -35px;
+}
+
+#interactive .row .col .box {
+    border-radius: 25px;
+    padding: 60px;
+}
+
+#interactive .container {
+    padding: 70px 50px;
+}
+
+#interactive h4 {
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+#interactive .btn {
+    margin-top: 30px;
+}
+
+#interactive p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#interactive .background1 {
+    background: url(../img/meiji-animated-corporate-video.gif) no-repeat;
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+
+}
+
+#interactive .interactive1 {
+    background: url(../img/services-augmentedreality-bg.png) no-repeat;
+    background-position: bottom right;
+    object-fit: cover;
+    background-size: cover;
+}
+
+#interactive .interactive2 {
+    background: url(../img/services-visualisation-bg.png) no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    /* Added */
+    object-fit: cover;
+}
+
+#interactive .background2 {
+    background: url(../img/animated-videos-for-business-in-singapore.gif) no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+    border-radius: 25px;
+}
+
+#interactive .interactive3 {
+    background: url(../img/interactive-video-bg.png) no-repeat;
+    background-position: bottom right;
+    background-size: cover;
+    /* Added */
+    object-fit: cover;
+}
+
+#interactive .background3 {
+    background: url(../img/Interactive-Video.gif) no-repeat;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    /* Added */
+    border-radius: 25px;
+}
+
+#interactive .row {
+    margin-bottom: 23px;
+}
+
+/*-- Motion graphic section end --*/
+/*-- Collaborate section start --*/
+#collabrate {
+    background: url(../img/footer-bg-min.png) no-repeat;
+    height: fit-content;
+    padding-top: 80px;
+    object-fit: cover;
+    background-position: bottom center;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#collabrate .box {
+    height: 250px;
+    border-radius: 5px;
+}
+
+#collabrate .box .arrow {
+    color: white;
+    float: inline-end;
+    margin-right: 100px;
+}
+
+#collabrate a {
+    text-decoration: none;
+}
+
+#collabrate .box h2 {
+    font-weight: 700;
+    font-size: 60px;
+    position: relative;
+    top: 120px;
+    left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#collabrate .box-1 {
+    background-color: transparent;
+    border: 2px solid #202EF7;
+    transition: all 0.9s;
+}
+
+#collabrate .box-1:hover {
+    background: #202EF7;
+    text-shadow: 0px 5px 3px#343333;
+}
+
+#collabrate .box-2 {
+    background-color: transparent;
+    border: 2px solid #FFFF21;
+    transition: all 0.9s;
+}
+
+#collabrate .box-2:hover {
+    background: #FFFF21;
+    text-shadow: 0px 5px 3px#343333;
+}
+
+#collabrate .h2 {
+    color: #FFFF00;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 1px #1E2DF7;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#collabrate .content {
+    text-align: center;
+    justify-content: center;
+}
+
+/*-- Collaborate section end --*/
+/*- Footer section start -*/
+#footer {
+    padding-bottom: 60px;
+    padding-left: 45px;
+    overflow: hidden;
+}
+
+#footer h4 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+#footer li {
+    list-style: none;
+    padding-top: 15px;
+}
+
+#footer li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+#footer li a:hover {
+    color: #7e7c7c;
+}
+
+#footer .social-icons a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer .social-icons a .icons {
+    width: 100px;
+}
+
+#footer .email {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+#footer .copyright {
+    font-size: large;
+}
+
+/*- Footer section start -*/
+
+
+
+
+@media screen and (max-width:1200px) {
+    nav .navbar-brand img {
+        width: 120px;
+    }
+
+    #production .conatiner {
+        padding: 60px;
+    }
+
+    #production h2 {
+        font-size: 40px;
+    }
+
+    #production p {
+        font-size: 20px;
+    }
+
+    #production img {
+        top: -120px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    * {
+        background-size: cover;
+    }
+
+    #banner .scroll-down ul li .nav-link {
+        color: white;
+    }
+
+    #production img {
+        top: 25px;
+    }
+
+    #banner .h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    #animation .background1 {
+        height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+    }
+
+    #animation .background2 {
+        height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+    }
+
+    #motion-graphic .background1 {
+        min-height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+    #motion-graphic .background2 {
+        height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+    }
+
+    #visual-effects .background1 {
+        min-height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+
+    #visual-effects .background2 {
+        height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+    }
+
+    #interactive .background1 {
+        min-height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+    #interactive .background2 {
+        min-height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+    #interactive .background3 {
+        min-height: 400px;
+        object-fit: cover;
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+    }
+
+    #collabrate {
+        padding-bottom: 0px;
+    }
+
+    #collabrate .box {
+        height: 200px;
+    }
+
+    #collabrate .h2 {
+        text-shadow: 4px 4px 1px #1E2DF7;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+
+    #collabrate .box h2 {
+        font-size: 40px;
+        top: 100px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    nav .navbar-brand img {
+        width: 100px;
+    }
+
+    #production {
+        background-size: cover;
+    }
+
+    #animation h2 {
+        font-size: 65px;
+        margin-bottom: 15px;
+    }
+
+    #motion-graphic h2 {
+        font-size: 65px;
+        margin-bottom: 15px;
+    }
+
+    #visual-effects h2 {
+        font-size: 65px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #animation h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #animation h2 sup {
+        font-size: 25px;
+    }
+
+    #animation .row1 {
+        margin-top: -25px;
+    }
+
+    #animation h4 {
+        font-size: 25px;
+    }
+
+    #motion-graphic h2 {
+        font-size: 45px;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #motion-graphic h2 sup {
+        font-size: 25px;
+    }
+
+    #motion-graphic .row1 {
+        margin-top: -25px;
+    }
+
+    #motion-graphic h4 {
+        font-size: 25px;
+    }
+
+    #visual-effects h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #visual-effects h2 sup {
+        font-size: 25px;
+    }
+
+    #visual-effects .row1 {
+        margin-top: -25px;
+    }
+
+    #visual-effects h4 {
+        font-size: 25px;
+    }
+
+    #animation .background1 {
+        height: 300px;
+    }
+
+    #animation .background2 {
+        height: 300px;
+    }
+
+    #motion-graphic .background1 {
+        height: 300px;
+    }
+
+    #motion-graphic .background2 {
+        height: 300px;
+    }
+
+    #visual-effects .background1 {
+        min-height: 300px;
+    }
+}

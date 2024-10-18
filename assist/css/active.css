@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* preloader section start */
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #f2f4f5 url(/assist/img/preloader1.gif) no-repeat;
+    background-position: center;
+    z-index: 9999;
+    position: fixed;
+    background-size: 5%;
+
+}
+
+.bg-pink {
+    background-color: #FF006F;
+
+}
+
+.text-pink {
+    color: #FF006F;
+}
+
+.bg-blue {
+    background-color: #202EF7;
+}
+
+.text-blue {
+    color: #202EF7;
+}
+
+.bg-yellow {
+    background-color: #FFFF21;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.5s;
+
+}
+
+#btn-3 {
+    background-color: transparent;
+    border: #FF006F 2px solid;
+    color: #FF006F;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+#btn-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgb(225, 213, 213);
+}
+
+#btn1:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #FF006F;
+}
+
+#btn2:hover {
+    transform: translateY(-10px);
+    background-color: #202EF7;
+    color: white;
+    box-shadow: 0px 6px 30px gray;
+}
+
+#btn4:hover {
+    transform: translateY(-10px);
+    background-color: #FF006F;
+    color: white;
+    box-shadow: 0px 10px 50px rgb(156, 155, 155);
+}
+
+#btn-5 {
+    background-color: transparent;
+    border: 2px solid #202EF7;
+    color: #000000;
+    padding: 10px 30px;
+    transition: all 0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-5:hover {
+    background-color: #202EF7;
+    color: white;
+    box-shadow: 0px 8px 20px rgb(156, 155, 155);
+}
+
+/**---- Navbar & Banner section start----**/
+/*-- Navbar section start --*/
+nav .navbar-brand img {
+    width: 140px;
+}
+
+#banner ul li .nav-link {
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+
+.scroll-down {
+    background-color: white;
+    padding: 0;
+}
+
+#banner .scroll-down ul li .nav-link {
+    color: black;
+}
+
+.scroll-down .navbar-brand img {
+    width: 90px;
+}
+
+.navbar-toggler:hover+.offcanvas {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.offcanvas {
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    visibility: hidden;
+    transform: translateX(100%);
+    background-color: #FF006F;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.offcanvas .social-icons a {
+    size: 30px;
+    color: #dde0e2;
+    text-decoration: none;
+}
+
+.offcanvas .social-icons a:hover {
+    color: white;
+}
+
+.offcanvas .social-icons {
+    padding-top: 25px;
+}
+
+/*-- Navbar section end --*/
+/*-- Banner section start --*/
+#banner {
+    background: url(../img/titlebg-about-min.jpg) no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
+
+/*- Footer section start -*/
+#footer {
+    padding-bottom: 60px;
+    padding-left: 45px;
+    overflow: hidden;
+}
+
+#footer h4 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+#footer li {
+    list-style: none;
+    padding-top: 15px;
+}
+
+#footer li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+#footer li a:hover {
+    color: #7e7c7c;
+}
+
+#footer .social-icons a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer .social-icons a .icons {
+    width: 100px;
+}
+
+#footer .email {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+#footer .copyright {
+    font-size: large;
+}
+
+/*- Footer section start -*/
+
+
+
+
+@media screen and (max-width:1200px) {
+    nav .navbar-brand img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #banner .scroll-down ul li .nav-link {
+        color: white;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    nav .navbar-brand img {
+        width: 100px;
+    }
+
+}

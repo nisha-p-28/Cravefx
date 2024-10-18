@@ -1,0 +1,562 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /* Hide horizontal overflow */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* preloader section start */
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #f2f4f5 url(/assist/img/preloader1.gif) no-repeat;
+    background-position: center;
+    z-index: 9999;
+    position: fixed;
+    background-size: 5%;
+
+}
+
+.bg-pink {
+    background-color: #FF006F;
+
+}
+
+.text-pink {
+    color: #FF006F;
+}
+
+.bg-blue {
+    background-color: #202EF7;
+}
+
+.text-blue {
+    color: #202EF7;
+}
+
+.bg-yellow {
+    background-color: #FFFF21;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.5s;
+
+}
+
+#btn-3 {
+    background-color: transparent;
+    border: #FF006F 2px solid;
+    color: #FF006F;
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+#btn-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 25px rgb(225, 213, 213);
+}
+
+#btn1:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #FF006F;
+}
+
+#btn2:hover {
+    transform: translateY(-10px);
+    background-color: #202EF7;
+    color: white;
+    box-shadow: 0px 6px 30px gray;
+}
+
+#btn4:hover {
+    transform: translateY(-10px);
+    background-color: #FF006F;
+    color: white;
+    box-shadow: 0px 10px 50px rgb(156, 155, 155);
+}
+
+#btn-5 {
+    background-color: transparent;
+    border: 2px solid #202EF7;
+    color: #000000;
+    padding: 10px 30px;
+    transition: all 0.5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#btn-5:hover {
+    background-color: #202EF7;
+    color: white;
+    box-shadow: 0px 8px 20px rgb(156, 155, 155);
+}
+
+/**---- Navbar & Banner section start----**/
+/*-- Navbar section start --*/
+nav .navbar-brand img {
+    width: 140px;
+}
+
+#banner ul li .nav-link {
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+
+.scroll-down {
+    background-color: white;
+    padding: 0;
+}
+
+#banner .scroll-down ul li .nav-link {
+    color: black;
+}
+
+.scroll-down .navbar-brand img {
+    width: 90px;
+}
+
+.navbar-toggler:hover+.offcanvas {
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.offcanvas {
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    visibility: hidden;
+    transform: translateX(100%);
+    background-color: #FF006F;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+.offcanvas .social-icons a {
+    size: 30px;
+    color: #dde0e2;
+    text-decoration: none;
+}
+
+.offcanvas .social-icons a:hover {
+    color: white;
+}
+
+.offcanvas .social-icons {
+    padding-top: 25px;
+}
+
+/*-- Navbar section end --*/
+/*-- Banner section start --*/
+#banner {
+    background: url(../img/titlebg-about-min.jpg) no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#banner .h1 {
+    font-weight: 700;
+    font-size: 70px;
+    text-align: center;
+    position: absolute;
+    top: 320px;
+    margin-left: 350px;
+    z-index: 10;
+}
+
+#banner .img {
+    width: 500px;
+    justify-items: start;
+    border-radius: 10px;
+    height: 300px;
+}
+
+#banner .img-1 {
+    margin-top: 140px;
+    position: relative;
+    /* Change position to relative */
+    left: -70px;
+    /* Move the image to the left by 70px */
+}
+
+#banner .img-2 {
+    margin-top: 70px;
+    float: right;
+    margin-right: 70px;
+    position: relative;
+    /* Make the image positioned */
+    z-index: 0;
+    /* Ensure the image has a higher stacking order */
+}
+
+#banner .img-3 {
+    position: relative;
+    margin-top: -10px;
+    float: inline-start;
+    left: -120px;
+    margin-bottom: 0;
+}
+
+#banner .img-4 {
+    float: right;
+    margin-top: -80px;
+    margin-right: -70px;
+}
+
+/*-- Banner section end --*/
+/*-- Video section start --*/
+#video video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/*-- Video section start --*/
+/*-- About section start --*/
+#about {
+    background: url(../img/bg-title-aboutus.png) no-repeat;
+    background-position: bottom;
+    object-fit:cover;
+    padding-bottom: 80px;
+    overflow: hidden;
+    margin-bottom: 0px;
+    background-size: 90%;
+    overflow: hidden;
+
+}
+
+#about .h3 {
+    font-size: 30px;
+    display: block;
+}
+
+#about .img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    float: left;
+    border-radius: 10px;
+    position: relative;
+    right: 250px;
+    z-index: 0;
+    top: -25px;
+    overflow: hidden;
+}
+hr {
+    width: 90%; /* Width of the hr */
+    margin: 0 auto; /* Centers the hr horizontally */
+    border: none; /* Optional: if you want to remove the default border */
+    border-top: 2px solid #000; /* Custom border */
+}
+#about img {
+    width: 280px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#about p {
+    font-size: 40px;
+}
+
+#about .menu {
+    font-weight: 35px;
+    margin-top: -150px;
+}
+
+#about ul li {
+    font-size: 25px;
+    font-weight: 700;
+    list-style: none;
+    gap: 30px;
+}
+
+#about .menu a {
+    text-decoration: none;
+    color: #FF006F;
+}
+
+/*-- About section end --*/
+/*-- Goals section start --*/
+#goals {
+    background: url(../img/bg-title-ourgoals.png) no-repeat;
+    background-position: bottom center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+    overflow: hidden;
+    background-size: 90%;
+}
+
+#goals .img {
+    height: 350px;
+    width: 320px;
+    border-radius: 20px;
+    object-fit: cover;
+
+}
+
+#goals h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#goals h4 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#goals p {
+    font-size: 25px;
+}
+
+#goals .content {}
+
+/*-- Goals section end --*/
+
+/*-- Collaborate section start --*/
+#collabrate {
+    background: url(../img/footer-bg-min.png) no-repeat;
+    height: fit-content;
+    padding-top: 80px;
+    object-fit: cover;
+    background-position: bottom center;
+    padding-bottom: 50px;
+    overflow: hidden;
+    background-size: cover;
+}
+
+#collabrate .box {
+    height: 250px;
+    border-radius: 5px;
+}
+
+#collabrate .box .arrow {
+    color: white;
+    float: inline-end;
+    margin-right: 100px;
+}
+
+#collabrate a {
+    text-decoration: none;
+}
+
+#collabrate .box h2 {
+    font-weight: 700;
+    font-size: 60px;
+    position: relative;
+    top: 120px;
+    left: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#collabrate .box-1 {
+    background-color: transparent;
+    border: 2px solid #202EF7;
+    transition: all 0.9s;
+}
+
+#collabrate .box-1:hover {
+    background: #202EF7;
+    text-shadow: 0px 5px 3px#343333;
+}
+
+#collabrate .box-2 {
+    background-color: transparent;
+    border: 2px solid #FFFF21;
+    transition: all 0.9s;
+}
+
+#collabrate .box-2:hover {
+    background: #FFFF21;
+    text-shadow: 0px 5px 3px#343333;
+}
+
+#collabrate .h2 {
+    color: #FFFF00;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px 1px #1E2DF7;
+    font-size: 65px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#collabrate .content {
+    text-align: center;
+    justify-content: center;
+}
+
+/*-- Collaborate section end --*/
+
+/*- Footer section start -*/
+#footer {
+    padding-bottom: 60px;
+    padding-left: 45px;
+    overflow: hidden;
+}
+
+#footer h4 {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+#footer li {
+    list-style: none;
+    padding-top: 15px;
+}
+
+#footer li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+#footer li a:hover {
+    color: #7e7c7c;
+}
+
+#footer .social-icons a {
+    color: black;
+    text-decoration: none;
+}
+
+#footer .social-icons a .icons {
+    width: 100px;
+}
+
+#footer .email {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+}
+
+#footer .copyright {
+    font-size: large;
+}
+
+/*- Footer section start -*/
+
+/**--- Responsive section start ---**/
+/*-- 1200px --*/
+@media screen and (max-width:1200px) {
+    nav .navbar-brand img {
+        width: 120px;
+    }
+
+    #banner .h1 {
+        font-size: 55px;
+        margin-left: 250px;
+        margin-top: -100px;
+    }
+
+    #banner .img {
+        width: 400px;
+        height: auto;
+    }
+    #about p {
+        font-size: 30px;
+    }
+    
+    #goals .img {
+        height: 350;
+        width: 250px;    
+    }
+}
+
+/*-- 992px --*/
+@media screen and (max-width:992px) {
+    #banner .scroll-down ul li .nav-link {
+        color: white;
+    }
+
+    #banner .h1 {
+        margin-left: 100px;
+        break: none;
+    }
+
+    #banner .img {
+        width: 350px;
+        height: auto;
+    }
+    #about .menu {
+        margin-top: 0px;
+    }
+    #collabrate .box {
+        height: 200px;
+    }
+    #collabrate .h2 {
+        text-shadow: 4px 4px 1px #1E2DF7;
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    #collabrate .box h2 {
+        font-size: 40px;
+        top: 100px;
+    }
+}
+
+/*-- 768px --*/
+@media screen and (max-width:768px) {
+    nav .navbar-brand img {
+        width: 100px;
+    }
+
+    #banner .h1 {
+        font-size: 45px;
+        position: relative;
+        margin-left: 60px;
+        margin-right: 60px;
+        word-break: normal;
+    }
+
+    #banner .img {
+        width: 200px;
+    }
+}
+
+/*-- 669px --*/
+
+
+
+
+//header//
+
+/* @media screen and (max-width:1200px) {
+    nav .navbar-brand img {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    #banner .scroll-down ul li .nav-link {
+        color: white;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    nav .navbar-brand img {
+        width: 100px;
+    }
+
+} */
