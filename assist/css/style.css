@@ -300,9 +300,18 @@ nav .navbar-brand img {
 
 #latest .container-lg {
     background: url(../img/backanimation.png), url(../img/backanimation2.png), url(../img/backanimation3.png);
-    background-position: 0%, 0% 0%, 33% 33%, 66% 66%, 100%;
-    background-size: cover;
+    background-position: 0% 0%, 33% 33%, 66% 100%;
+    background-size: cover, cover, cover;
+    transition: background-position 0.5s ease; /* Smooth transition */
+    background-repeat: no-repeat;
+    object-fit: cover, cover, cover;
+    padding: 0px;
 }
+
+#latest .container-lg:hover {
+    background-position: -5% 0%, 28% 28%, 61% 61%; /* Slight shift when hovered */
+}
+
 
 #latest .himg {
     border-radius: 20px;

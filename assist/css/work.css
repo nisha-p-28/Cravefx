@@ -115,7 +115,7 @@ nav .navbar-brand img {
 
 #banner ul li .nav-link {
     font-weight: 700;
-    color: white;
+    color: black;
     font-size: 15px;
 }
 
@@ -165,7 +165,7 @@ nav .navbar-brand img {
 /*-- Navbar section end --*/
 /*-- Banner section start --*/
 #banner {
-    background: url(../img/titlebg-about-min.jpg) no-repeat;
+    background: yellow;;
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -235,7 +235,7 @@ nav .navbar-brand img {
 #about {
     background: url(../img/bg-title-aboutus.png) no-repeat;
     background-position: bottom;
-    object-fit:cover;
+    object-fit: cover;
     padding-bottom: 80px;
     overflow: hidden;
     margin-bottom: 0px;
@@ -261,12 +261,18 @@ nav .navbar-brand img {
     top: -25px;
     overflow: hidden;
 }
+
 hr {
-    width: 90%; /* Width of the hr */
-    margin: 0 auto; /* Centers the hr horizontally */
-    border: none; /* Optional: if you want to remove the default border */
-    border-top: 2px solid #000; /* Custom border */
+    width: 90%;
+    /* Width of the hr */
+    margin: 0 auto;
+    /* Centers the hr horizontally */
+    border: none;
+    /* Optional: if you want to remove the default border */
+    border-top: 2px solid #000;
+    /* Custom border */
 }
+
 #about img {
     width: 280px;
     height: 380px;
@@ -333,6 +339,98 @@ hr {
 #goals .content {}
 
 /*-- Goals section end --*/
+/*-- Ourteam section start --*/
+#ourteam {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+#ourteam h2 {
+    font-size: 70px;
+    font-weight: 800;
+    text-shadow: 5px 4px 1px #1E2DF7;
+    color: #f2f4f5;
+    text-align: center;
+    line-height: 100vh;
+    font-family: sans-serif;
+}
+
+#image {
+    position: absolute;
+    background: url(../img/cravefx-team-1-min.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    z-index: -1;
+}
+
+/*-- Ourteam section start --*/
+/*-- Teams section start --*/
+#team {
+    background-color: #1F80FB;
+    padding-top: 100px;
+}
+
+#team .p {
+    font-size: 25px;
+}
+
+#team .box .pills {
+    transform: rotate(-25deg);
+    width: 200px;
+    height: 80px;
+    outline: outset 0.3;
+    transition: all 0.5s;
+}
+
+
+#team .box .pill-1:hover{
+    background-color: #1E2DF7;
+}
+
+#team .box .pill-2:hover{
+    background-color: #FF006F;
+} 
+#team .box .pill-3:hover{
+    background-color: #ffae40
+    ;
+} 
+#team .row1 {
+    padding-top: 50px;
+}
+
+#team .box img {
+    position: relative;
+    top: -162px;
+    left: 20px;
+    clip-path: polygon(0 0, 65% 0, 95% 60%, 9% 100%);
+    /* Clipping to match the pill's rotated format */
+    transition: transform 0.5s ease, clip-path 0.5s ease-out;
+}
+
+#team .box img:hover {
+    transform: translateY(-10px);
+    clip-path: polygon(0 0, 100% 0, 100% 63%, 21% 100%);
+}
+
+#team .content {
+    padding-bottom: 55px;
+}
+#team .content h6{
+    text-transform: uppercase;
+    line-height: 7px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#team .content p{
+    font-size: 13px;
+}
+
+/*-- Teams section end --*/
 
 /*-- Collaborate section start --*/
 #collabrate {
@@ -473,13 +571,14 @@ hr {
         width: 400px;
         height: auto;
     }
+
     #about p {
         font-size: 30px;
     }
-    
+
     #goals .img {
         height: 350;
-        width: 250px;    
+        width: 250px;
     }
 }
 
@@ -498,17 +597,21 @@ hr {
         width: 350px;
         height: auto;
     }
+
     #about .menu {
         margin-top: 0px;
     }
+
     #collabrate .box {
         height: 200px;
     }
+
     #collabrate .h2 {
         text-shadow: 4px 4px 1px #1E2DF7;
         font-size: 40px;
         padding-top: 30px;
     }
+
     #collabrate .box h2 {
         font-size: 40px;
         top: 100px;

@@ -936,6 +936,11 @@ nav .navbar-brand img {
         font-size: 65px;
         margin-bottom: 15px;
     }
+
+    #interactive h2 {
+        font-size: 65px;
+        margin-bottom: 15px;
+    }
 }
 
 @media screen and (max-width:576px) {
@@ -991,6 +996,24 @@ nav .navbar-brand img {
         font-size: 25px;
     }
 
+    #interactive h2 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    #interactive h2 sup {
+        font-size: 25px;
+    }
+
+    #interactive .row1 {
+        margin-top: -25px;
+    }
+
+    #interactive h4 {
+        font-size: 25px;
+    }
+
+
     #animation .background1 {
         height: 300px;
     }
@@ -1009,5 +1032,14 @@ nav .navbar-brand img {
 
     #visual-effects .background1 {
         min-height: 300px;
+    }
+    #interactive .background1 {
+        height: 300px;
+    }
+    #interactive .background2 {
+        height: 300px;
+    }
+    #interactive .background3 {
+        height: 300px;
     }
 }
